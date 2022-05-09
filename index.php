@@ -412,7 +412,7 @@
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="Carvajal Materiales"><i class="bx bx-plus"></i></a>
-                <a href="/Details/webProyect1.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                <a href="/Details/webProyect1.php" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
                   class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -428,7 +428,7 @@
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="Trip"><i class="bx bx-plus"></i></a>
-                <a href="/Details/vgamesProyect1.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                <a href="/Details/vgamesProyect1.php" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
                   class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
