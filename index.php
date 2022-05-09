@@ -83,7 +83,7 @@
           <div class="row">
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>3 Jan 2021</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>3 Jan </span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>GitHub:</strong>
                   <span>https://github.com/MichaelGoonzalez</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+57 312 734 2671</span></li>
