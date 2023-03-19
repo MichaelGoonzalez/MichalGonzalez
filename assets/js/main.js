@@ -208,5 +208,4 @@
       clickable: true
     }
   });
-
 })()

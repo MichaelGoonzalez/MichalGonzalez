@@ -1000,3 +1000,11 @@ section .container {
     transform: rotate(360deg);
   }
 }
+
+.succes img{
+  width: 20vw;
+}
+.succes h1{
+  font-size: 3vw;
+  font-weight: 700;
+}
