@@ -816,45 +816,94 @@ section .container {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+
   color: #444444;
-  padding: 20px;
+  border-radius: 30px;
+  padding: 5px;
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
 }
-.contact .info-box i.bx {
-  font-size: 24px;
-  color: #18d26e;
-  border-radius: 50%;
-  padding: 14px;
-  float: left;
-  background: rgba(255, 255, 255, 0.1);
+.contact .info-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 10px;
 }
+.contact .info-box3{
+  padding: 0px;
+  text-align: center;
+}
+.contact .info-box3 a{
+  font-size: 2rem;
+  color:#15bb62;
+}
+.contact .info-box3 p{
+  font-size: 2rem;
+  margin: 0px;
+}
+.contact .info-box3 a:hover{
+  color: #00ff55;
+  padding: 0px;
+  text-align: center;
+}
+.contact .info-box i.bx {
+  font-size: 4vw;
+  color: #18d26e;
+  padding: 2px;
+  float: left;
+}
+
 .contact .info-box h3 {
-  font-size: 20px;
+  font-size: 3vw; /* Establece el tamaño de fuente inicial en 3vw */
   color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
-  margin: 10px 0 8px 68px;
 }
-.contact .info-box p {
-  padding: 0;
-  color: #fff;
-  line-height: 24px;
-  font-size: 14px;
-  margin: 0 0 0 68px;
+
+@media (max-width: 767px) { /* Añade un punto de quiebre a 767px */
+  .contact .info-box h3 {
+    font-size: 3vw; /* Reduce el tamaño de fuente a 2.5vw */
+  }
 }
-.contact .info-box .social-links {
-  margin: 5px 0 0 68px;
+
+@media (max-width: 575px) { /* Añade un punto de quiebre a 575px */
+  .contact .info-box h3 {
+    font-size: 4vw; /* Reduce el tamaño de fuente a 2vw */
+  }
+  .contact .info-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) { /* Añade un punto de quiebre a 375px */
+  .contact .info-box h3 {
+    font-size: 4vw; /* Reduce el tamaño de fuente a 1.5vw */
+  }
+}
+
+.contact .info-box2 .social-links {
+  letter-spacing: 3vw;
   display: flex;
 }
-.contact .info-box .social-links a {
-  font-size: 18px;
+.contact .info-box2 .social-links p{
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.contact .info-box2 .social-links a {
+  font-size: 40px;
   display: inline-block;
   color: #fff;
   line-height: 1;
-  margin-right: 12px;
   transition: 0.3s;
 }
-.contact .info-box .social-links a:hover {
+.contact .info-box2 .social-links a:hover {
   color: #18d26e;
 }
 .contact .php-email-form {
