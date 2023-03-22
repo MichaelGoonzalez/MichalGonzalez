@@ -766,6 +766,7 @@ section .container {
   padding-bottom: 40px;
 }
 .portfolio-details .portfolio-title {
+  color: #00ff55;
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -774,9 +775,11 @@ section .container {
   padding-top: 45px;
 }
 .portfolio-details .portfolio-info h3 {
+  letter-spacing: 5px;
   font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 20px;
+  font-weight: 800;
+  margin-bottom: 5px;
+  text-transform: uppercase;
 }
 .portfolio-details .portfolio-info ul {
   list-style: none;
