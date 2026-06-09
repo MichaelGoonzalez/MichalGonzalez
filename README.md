@@ -1,30 +1,54 @@
-[![Watch tutorial here](https://img.youtube.com/vi/sUKptmUVIBM/0.jpg)](https://youtu.be/sUKptmUVIBM)
+# Portafolio — Maicol Stiven Alarcón González
 
-# [Watch video here](https://youtu.be/sUKptmUVIBM)
+Mi sitio web de portafolio personal como **Full Stack Developer & AI Integration Specialist**.
 
-## What you will learn
+## Archivos
 
-- Latest Next.js 13 features
-- Next.js App Router
-- Next.js Server Actions
-- Client & Server Components
-- TypeScript (Beginner & Intermediate)
-- Tailwind CSS
-- Context API
-- Advanced Animations with Framer Motion
-- React.Email & Resend
-- Custom React hooks
-- Fresh, modern UI design
-- Light & Dark mode
-- Responsive website
+```
+├── index.html    # Estructura HTML
+├── styles.css    # Diseño (dark mode, responsive, animaciones)
+└── script.js     # Lógica (idioma, partículas, scroll, formulario)
+```
 
-## Important
+## Stack técnico
 
-If you want to be a professional developer, you have to know the fundamentals like JavaScript and CSS really well. I highly recommend you go through my [Professional JavaScript](https://bytegrad.com/courses/professional-javascript) and [Professional CSS](https://bytegrad.com/courses/professional-css) courses.
+- HTML5 + CSS3 + JavaScript (vanilla — sin frameworks ni dependencias)
+- Google Fonts (Inter + JetBrains Mono)
+- Formspree para el formulario de contacto
+- GitHub Pages ready (rutas relativas)
 
-I'm close to releasing a complete React & Next.js course. Get on the email list to receive early-bird pricing: [link](https://email.bytegrad.com/).
+## Secciones
 
-## Setup
+1. **Hero** — nombre, título, partículas animadas interactivas, stats
+2. **Sobre mí** — historia personal, highlights cards
+3. **Skills** — agrupados en Frontend / Backend / AI & Computer Vision / Data & DevOps
+4. **Proyectos** — Las Juanas Sur, IA-Tracking, Proyectos Empresariales (NDA)
+5. **Servicios** — Desarrollo Web, Integración IA, Visión Artificial, Consultoría
+6. **Contacto** — formulario + redes (GitHub, LinkedIn, email)
+7. **Footer**
 
-1. Add RESEND_API_KEY environment variable in .env.local
-2. In the send-email.ts action file, change the "to" email to your own email
+## Funcionalidades
+
+- 🌐 **Toggle EN/ES** con persistencia en localStorage
+- 🎯 **Animaciones scroll** vía Intersection Observer
+- ✨ **Partículas interactivas** en el hero (reaccionan al mouse)
+- 📱 **100% responsive** (mobile-first)
+- 🧭 **Smooth scroll** en navegación
+- 📬 Formulario apuntando a Formspree
+
+## Cómo usar
+
+1. Clona o descarga los archivos
+2. Abre `index.html` en el navegador
+3. Para GitHub Pages: sube los 3 archivos a la raíz del repo
+
+### Pendiente de configurar
+
+- Reemplazar `YOUR_FORM_ID` en `index.html` línea 262 con un ID real de [Formspree](https://formspree.io/)
+- Actualizar links de proyectos con tus URLs reales si cambian
+
+## Diseño
+
+- Dark mode con acento cyan (`#00d4ff`) y gradientes a púrpura (`#7c3aed`)
+- Tipografía moderna con Inter
+- Glassmorphism en nav, cards con hover effects
