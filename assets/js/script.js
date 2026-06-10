@@ -1,31 +1,37 @@
+/* ==========================================
+   PORTFOLIO — Maicol Stiven Alarcón González
+   portfolio/assets/js/script.js
+   ========================================== */
+
 const translations = {
   nav_about: { en: 'About', es: 'Sobre Mí' },
   nav_skills: { en: 'Skills', es: 'Habilidades' },
   nav_projects: { en: 'Projects', es: 'Proyectos' },
   nav_services: { en: 'Services', es: 'Servicios' },
   nav_contact: { en: 'Contact', es: 'Contacto' },
-  hero_badge: { en: 'Available for Work', es: 'Disponible para Trabajar' },
+  hero_badge: { en: 'Available for Work · Remote', es: 'Disponible para Trabajar · Remoto' },
   hero_greeting: { en: "Hi, I'm", es: 'Hola, soy' },
   hero_title: { en: 'Full Stack Developer & AI Integration Specialist', es: 'Full Stack Developer & Especialista en Integración de IA' },
+  hero_location: { en: '📍 Neiva, Colombia · Open to Remote', es: '📍 Neiva, Colombia · Disponible Remoto' },
   hero_tagline: { en: 'I build modern web applications and AI-powered systems that solve real problems — from social impact sites to computer vision for industry.', es: 'Construyo aplicaciones web modernas y sistemas impulsados por IA que resuelven problemas reales — desde sitios de impacto social hasta visión artificial para la industria.' },
-  hero_cta_projects: { en: 'View Projects', es: 'Ver Proyectos' },
-  hero_cta_contact: { en: 'Contact Me', es: 'Contáctame' },
+  hero_cta_projects: { en: '▶ View Projects', es: '▶ Ver Proyectos' },
+  hero_cta_contact: { en: '✉ Contact', es: '✉ Contactar' },
   hero_stat_years: { en: 'Years Experience', es: 'Años de Experiencia' },
-  hero_stat_projects: { en: 'Projects Completed', es: 'Proyectos Completados' },
+  hero_stat_projects: { en: 'Projects Delivered', es: 'Proyectos Entregados' },
   hero_stat_productivity: { en: 'AI Productivity Multiplier', es: 'Multiplicador de Productividad IA' },
   about_label: { en: 'About Me', es: 'Sobre Mí' },
   about_title: { en: 'Colombian Developer <br>Building at the Intersection of Web & AI', es: 'Desarrollador Colombiano <br>Construyendo en la Intersección de Web e IA' },
   about_p1: { en: "Colombian developer with 3+ years of experience working at the intersection of modern web development and applied artificial intelligence. I've built everything from social impact websites that amplify marginalized voices to computer vision systems that automate industrial logistics.", es: 'Desarrollador colombiano con más de 3 años de experiencia trabajando en la intersección entre el desarrollo web moderno y la inteligencia artificial aplicada. He construido desde sitios web con impacto social que amplifican voces marginadas hasta sistemas de visión por computadora que automatizan la logística industrial.' },
   about_p2: { en: "My differentiator: I multiply my productivity ×2 using AI agents throughout the development lifecycle. This lets me deliver real solutions to real problems — faster, without cutting corners. I don't just write code; I build systems that make a difference.", es: 'Mi diferencial: multiplico mi productividad ×2 usando agentes de IA durante todo el ciclo de desarrollo. Esto me permite entregar soluciones reales a problemas reales — más rápido, sin atajos. No solo escribo código; construyo sistemas que marcan la diferencia.' },
-  about_p3: { en: 'Bilingual in English and Spanish, I thrive in international and remote environments. Currently seeking opportunities where I can bring my unique blend of full-stack development, AI integration, and computer vision expertise to solve meaningful challenges.', es: 'Bilingüe en inglés y español, prospero en entornos internacionales y remotos. Actualmente busco oportunidades donde pueda aportar mi combinación única de desarrollo full-stack, integración de IA y visión por computadora para resolver desafíos significativos.' },
+  about_p3: { en: 'Founder of SurLab Studio — a technology studio based in Neiva, Huila, Colombia. Because I believe the south of Colombia has world-class tech talent, and I am proving it with every project.', es: 'Fundador de SurLab Studio — un estudio de tecnología con sede en Neiva, Huila, Colombia. Porque creo que el sur de Colombia tiene talento tech de clase mundial, y lo demuestro con cada proyecto.' },
   about_h1_title: { en: 'Angular & Next.js', es: 'Angular y Next.js' },
   about_h1_desc: { en: '3+ years building production apps with Angular and Next.js — from SPAs to SEO-optimized static sites.', es: '3+ años construyendo apps de producción con Angular y Next.js — desde SPAs hasta sitios estáticos optimizados para SEO.' },
   about_h2_title: { en: 'Computer Vision & AI', es: 'Visión por Computadora e IA' },
-  about_h2_desc: { en: 'YOLOv8, active learning, multi-camera tracking, and AI agents integrated into real-world applications.', es: 'YOLOv8, active learning, tracking multi-cámara y agentes de IA integrados en aplicaciones del mundo real.' },
+  about_h2_desc: { en: 'YOLOv8, ByteTrack, active learning, multi-camera tracking, and AI agents integrated into real-world applications.', es: 'YOLOv8, ByteTrack, active learning, tracking multi-cámara y agentes de IA integrados en aplicaciones del mundo real.' },
   about_h3_title: { en: '×2 Productivity', es: 'Productividad ×2' },
   about_h3_desc: { en: 'AI-accelerated workflows powered by custom agents — I ship faster without sacrificing quality.', es: 'Flujos acelerados por IA impulsados por agentes personalizados — entrego más rápido sin sacrificar calidad.' },
-  about_h4_title: { en: 'Social Impact', es: 'Impacto Social' },
-  about_h4_desc: { en: 'I choose projects that matter — from feminist collectives to tools that make industries safer and more efficient.', es: 'Elijo proyectos que importan — desde colectivas feministas hasta herramientas que hacen industrias más seguras y eficientes.' },
+  about_h4_title: { en: 'Global Vision', es: 'Visión Global' },
+  about_h4_desc: { en: 'Colombian developer proving that world-class tech talent exists everywhere — from Neiva to the world.', es: 'Desarrollador colombiano demostrando que el talento tech de clase mundial existe en todas partes — desde Neiva para el mundo.' },
   skills_label: { en: 'Expertise', es: 'Experiencia' },
   skills_title: { en: 'Technical Skills', es: 'Habilidades Técnicas' },
   skills_desc: { en: 'A practical toolkit spanning frontend, backend, AI, and data — built from real projects that ship to production.', es: 'Un conjunto práctico de herramientas que abarca frontend, backend, IA y datos — construido desde proyectos reales que llegan a producción.' },
@@ -37,20 +43,20 @@ const translations = {
   projects_title: { en: 'Projects', es: 'Proyectos' },
   projects_desc: { en: 'Real projects that solve real problems — from social impact websites to AI-powered computer vision systems.', es: 'Proyectos reales que resuelven problemas reales — desde sitios web de impacto social hasta sistemas de visión por computadora con IA.' },
   proj1_title: { en: 'Las Juanas Sur', es: 'Las Juanas Sur' },
-  proj1_problem: { en: 'Problem: Gender violence invisibilized in Huila, Colombia', es: 'Problema: Violencia de género invisibilizada en el Huila' },
-  proj1_desc: { en: 'Website for a feminist collective in Huila. Ranks #1 on Google for its name. Distinctive visual design, SEO-optimized, fully responsive. A digital tool that amplifies visibility of gender-based violence in the department.', es: 'Sitio web para una colectiva feminista del Huila. Posiciona #1 en Google para su nombre. Diseño visual distintivo, SEO optimizado, completamente responsivo. Una herramienta digital que visibiliza las violencias de género en el departamento.' },
+  proj1_problem: { en: 'Impact: #1 on Google · Gender violence visibility', es: 'Impacto: #1 en Google · Visibilidad violencia de género' },
+  proj1_desc: { en: 'Website for a feminist collective in Huila that maps and makes visible gender-based violence in the department. Ranks #1 on Google for its name. Distinctive visual design, SEO-optimized, fully responsive. A digital tool that amplifies marginalized voices.', es: 'Sitio web para una colectiva feminista del Huila que mapea y visibiliza las violencias de género en el departamento. Posiciona #1 en Google para su nombre. Diseño visual distintivo, SEO optimizado, completamente responsivo. Una herramienta digital que amplifica voces marginadas.' },
   proj1_demo: { en: 'Live Site →', es: 'Sitio Web →' },
   proj2_title: { en: 'IA-Tracking', es: 'IA-Tracking' },
-  proj2_problem: { en: 'Problem: Manual logistics counting is slow and error-prone', es: 'Problema: El conteo logístico manual es lento y propenso a errores' },
-  proj2_desc: { en: 'Multi-camera computer vision system for package detection and tracking in logistics environments. Supports simultaneous RTSP streams, GPU batch processing, active learning for incremental retraining, and virtual line counting — all in real time.', es: 'Sistema de visión por computadora multi-cámara para detección y seguimiento de paquetes en entornos logísticos. Soporta múltiples transmisiones RTSP simultáneas, procesamiento batch en GPU, active learning para re-entrenamiento incremental y conteo por líneas virtuales — todo en tiempo real.' },
+  proj2_problem: { en: 'Impact: Real-time logistics automation', es: 'Impacto: Automatización logística en tiempo real' },
+  proj2_desc: { en: 'Multi-camera computer vision system for package detection and tracking in logistics environments. Supports simultaneous RTSP streams, GPU batch processing, active learning for incremental retraining, and virtual line counting — all in real time using YOLOv8 and ByteTrack.', es: 'Sistema de visión por computadora multi-cámara para detección y seguimiento de paquetes en entornos logísticos. Soporta múltiples transmisiones RTSP simultáneas, procesamiento batch en GPU, active learning para re-entrenamiento incremental y conteo por líneas virtuales — todo en tiempo real usando YOLOv8 y ByteTrack.' },
   proj2_github: { en: 'GitHub →', es: 'GitHub →' },
   proj3_title: { en: 'Enterprise Solutions (NDA)', es: 'Proyectos Empresariales (NDA)' },
-  proj3_problem: { en: 'Problem: Large-scale event and business management', es: 'Problema: Gestión de eventos y negocios a gran escala' },
+  proj3_problem: { en: 'Clients: Movistar Arena · Fenalco', es: 'Clientes: Movistar Arena · Fenalco' },
   proj3_desc: { en: 'Event management and enterprise systems for major Colombian clients including Movistar Arena and Fenalco, developed under contract with IPServices. Code under NDA — details available upon request.', es: 'Sistemas de gestión de eventos y soluciones empresariales para grandes clientes colombianos como Movistar Arena y Fenalco, desarrollados bajo contrato con IPServices. Código bajo NDA — detalles disponibles bajo solicitud.' },
   proj3_nda: { en: 'Private Contract', es: 'Contrato Privado' },
   services_label: { en: 'What I Offer', es: 'Lo Que Ofrezco' },
   services_title: { en: 'Services', es: 'Servicios' },
-  services_desc: { en: 'From web development to AI-powered automation — I help businesses leverage technology to achieve more.', es: 'Desde desarrollo web hasta automatización con IA — ayudo a las empresas a aprovechar la tecnología para lograr más.' },
+  services_desc: { en: 'From web development to AI-powered automation — I help businesses leverage technology to achieve more. Available for freelance, contract, and remote positions.', es: 'Desde desarrollo web hasta automatización con IA — ayudo a las empresas a aprovechar la tecnología para lograr más. Disponible para freelance, contrato y posiciones remotas.' },
   serv1_title: { en: 'Custom Web Development', es: 'Desarrollo Web a Medida' },
   serv1_desc: { en: 'Modern web applications built with Angular and Next.js, tailored to your business needs. From landing pages to enterprise platforms — production-ready, SEO-optimized, fully responsive.', es: 'Aplicaciones web modernas con Angular y Next.js, adaptadas a las necesidades de tu negocio. Desde landing pages hasta plataformas empresariales — listas para producción, optimizadas para SEO, completamente responsivas.' },
   serv2_title: { en: 'AI Integration', es: 'Integración de IA' },
@@ -73,12 +79,15 @@ const translations = {
   form_submit: { en: 'Send Message →', es: 'Enviar Mensaje →' },
   contact_email_label: { en: 'Email', es: 'Correo' },
   contact_location_label: { en: 'Location', es: 'Ubicación' },
-  contact_location: { en: 'Remote / Latin America', es: 'Remoto / Latinoamérica' },
+  contact_location: { en: 'Neiva, Colombia · Remote', es: 'Neiva, Colombia · Remoto' },
   contact_response_label: { en: 'Response Time', es: 'Tiempo de Respuesta' },
   contact_response: { en: 'Within 24 hours', es: 'Dentro de 24 horas' },
   contact_social: { en: 'Find me on', es: 'Encuéntrame en' },
   footer_rights: { en: 'All rights reserved.', es: 'Todos los derechos reservados.' },
-  footer_top: { en: 'Back to Top ↑', es: 'Volver Arriba ↑' }
+  footer_top: { en: 'Back to Top ↑', es: 'Volver Arriba ↑' },
+  hero_tag_terminal: { en: 'Full Stack Developer &amp; AI', es: 'Desarrollador Full Stack &amp; IA' },
+  hero_desc: { en: 'Building solutions at the intersection of modern web development and applied artificial intelligence. From Neiva, for the world.', es: 'Construyo soluciones en la intersección del desarrollo web moderno y la inteligencia artificial aplicada. Desde Neiva, para el mundo.' },
+  hero_music_label: { en: 'Currently building: IA-Tracking v2', es: 'Construyendo: IA-Tracking v2' }
 };
 
 let currentLang = localStorage.getItem('lang') || 'en';
@@ -153,90 +162,8 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => {
+document.querySelectorAll('.fade-in').forEach(el => {
   observer.observe(el);
-});
-
-const canvas = document.getElementById('particles-canvas');
-const ctx = canvas.getContext('2d');
-let particles = [];
-let mouseX = -1000;
-let mouseY = -1000;
-
-function resizeCanvas() {
-  const hero = document.getElementById('hero');
-  canvas.width = hero.offsetWidth;
-  canvas.height = hero.offsetHeight;
-}
-
-resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
-
-class Particle {
-  constructor() {
-    this.x = Math.random() * canvas.width;
-    this.y = Math.random() * canvas.height;
-    this.vx = (Math.random() - 0.5) * 0.5;
-    this.vy = (Math.random() - 0.5) * 0.5;
-    this.radius = Math.random() * 1.8 + 0.5;
-  }
-  update() {
-    this.x += this.vx;
-    this.y += this.vy;
-    if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-    if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
-    const dx = mouseX - this.x;
-    const dy = mouseY - this.y;
-    const dist = Math.sqrt(dx * dx + dy * dy);
-    if (dist < 200) {
-      const force = (200 - dist) / 200 * 0.3;
-      this.vx -= (dx / dist) * force;
-      this.vy -= (dy / dist) * force;
-    }
-  }
-  draw() {
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(0, 212, 255, 0.4)';
-    ctx.fill();
-  }
-}
-
-for (let i = 0; i < 70; i++) {
-  particles.push(new Particle());
-}
-
-function animateParticles() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  particles.forEach(p => { p.update(); p.draw(); });
-  for (let i = 0; i < particles.length; i++) {
-    for (let j = i + 1; j < particles.length; j++) {
-      const dx = particles[i].x - particles[j].x;
-      const dy = particles[i].y - particles[j].y;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-      if (dist < 150) {
-        ctx.beginPath();
-        ctx.moveTo(particles[i].x, particles[i].y);
-        ctx.lineTo(particles[j].x, particles[j].y);
-        ctx.strokeStyle = `rgba(0, 212, 255, ${0.08 * (1 - dist / 150)})`;
-        ctx.lineWidth = 0.6;
-        ctx.stroke();
-      }
-    }
-  }
-  requestAnimationFrame(animateParticles);
-}
-animateParticles();
-
-document.getElementById('hero').addEventListener('mousemove', e => {
-  const rect = canvas.getBoundingClientRect();
-  mouseX = e.clientX - rect.left;
-  mouseY = e.clientY - rect.top;
-});
-
-document.getElementById('hero').addEventListener('mouseleave', () => {
-  mouseX = -1000;
-  mouseY = -1000;
 });
 
 document.getElementById('contactForm').addEventListener('submit', function(e) {
@@ -255,7 +182,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         throw new Error('Network response was not ok.');
       }
     }).catch(() => {
-      btn.textContent = currentLang === 'en' ? 'Error ❌' : 'Error ❌';
+      btn.textContent = 'Error ❌';
       setTimeout(() => { btn.textContent = originalText; btn.disabled = false; }, 3000);
     });
 });
